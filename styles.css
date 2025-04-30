@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Alegreya+SC:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -84,12 +87,12 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -103,117 +106,176 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
 body {
-  line-height: 1;
+    line-height: 1;
 }
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
+    content: "";
+    content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 :root {
-  --dark-pink: #d991a4;
-  --light-pink: #f2bdcb;
-  --tan: #d9a273;
-  --light-brown: #8c4e2a;
-  --dark-brown: #400d01;
+    --dark-pink: #d991a4;
+    --light-pink: #f2bdcb;
+    --tan: #d9a273;
+    --light-brown: #8c4d2a;
+    --dark-brown: #400d01;
+    --white: #ffffff;
+    --black: #000000;
 }
+/* Custome CSS */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Main */
+body {
+    font-family: "afacad", sans-serif;
+    background-color: var(--white);
+    color: var(--dark-pink);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+main{
+    padding: 1rem 2rem;
+}
+.title{
+    position: relative;
+    width: 50%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Alegreya SC", serif;
+    font-weight: 500;
+    color: var(--dark-pink);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+h1 {
+    flex: auto;
+    font-size: 3rem;
+    color: var(--light-pink);
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.2rem;
+}
+
 /* offscreen menu */
 .off-screen-menu {
-  color: var(--light-pink);
-  background-color: var(--light-brown);
-  height: 100vh;
-  width: 100%;
-  max-width: 450px;
-  position: fixed;
-  top: 0;
-  right: -450px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 3rem;
-  transition: 0.3s ease;
+    color: var(--light-pink);
+    background-color: var(--light-brown);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: 0.3s ease;
 }
 
 .off-screen-menu.active {
-  right: 0;
+    right: 0;
 }
 
 nav {
-  color: var(--light-pink);
-  padding: 1rem;
-  display: flex;
-  background-color: var(--light-brown);
+    color: var(--light-pink);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--light-brown);
 }
 
-
-.off-screen-menu a{
+.off-screen-menu a {
     color: var(--light-pink);
     text-decoration: none;
 }
 .off-screen-menu li:hover {
     /* padding: .5rem; */
-  color: var(--dark-pink);
-  text-decoration: underline;
-  transform: scale(1.1);
-  transition: 0.3s ease;
+    color: var(--dark-pink);
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: 0.3s ease;
 }
 
-
 .ham-menu {
-  height: 50px;
-  width: 50px;
-  margin-left: auto;
-  position: relative;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
 }
 
 .ham-menu span {
-  height: 5px;
-  width: 100%;
-  background-color: var(--light-pink);
-  border-radius: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.3s ease;
+    height: 5px;
+    width: 100%;
+    background-color: var(--light-pink);
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
 }
 .ham-menu span:nth-child(1) {
-  top: 25%;
+    top: 25%;
 }
 
 .ham-menu span:nth-child(3) {
-  top: 75%;
+    top: 75%;
 }
 
 .ham-menu.active span:nth-child(1) {
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .ham-menu.ham-menu.active span:nth-child(2) {
-  opacity: 0;
+    opacity: 0;
 }
 .ham-menu.active span:nth-child(3) {
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 /* main content */

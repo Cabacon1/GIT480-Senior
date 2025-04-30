@@ -1,37 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poppy & Crumb</title>
-    <meta name="robots" content="index,follow" />
-    <!-- style -->
-    <link rel="stylesheet" href="/styles.css" />
-    <!-- Javascript -->
-    <script src="/scripts.js" async></script>
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poppy & Crumb</title>
+  <meta name="robots" content="index,follow" />
+  <!-- style -->
+  <link rel="stylesheet" href="/styles.css" />
+  <!-- Javascript -->
+  <script src="/scripts.js" async></script>
+</head>
+
+<body>
+  <header>
+    
+    <div class="div off-screen-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="/product.html">Products</a></li>
+        <li><a href="/checkout.html">About</a></li>
+      </ul>
+    </div>
+    <nav>
       <h1 id="title">Poppy & Crumb</h1>
-      <div class="div off-screen-menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="/product.html">Products</a></li>
-          <li><a href="/checkout.html">About</a></li>
-        </ul>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <nav>
-        <div class="ham-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-    </header>
-    <main>
+    </nav>
+  </header>
+  <main>
+    <section>
       <!-- Image Carousel -->
-      <section class="carousel"></section>
-    </main>
-    <footer></footer>
-  </body>
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img src="/images/slide1.jpg" alt="Slide 1" />
+        </div>
+        <div class="carousel-slide">
+          <img src="/images/slide2.jpg" alt="Slide 2" />
+        </div>
+        <div class="carousel-slide">
+          <img src="/images/slide3.jpg" alt="Slide 3" />
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+      <div class="carousel-indicators">
+        <span class="indicator" onclick="currentSlide(1)"></span>
+        <span class="indicator" onclick="currentSlide(2)"></span>
+        <span class="indicator" onclick="currentSlide(3)"></span>
+      </div>
+      <!-- Featured Reviews Section -->
+      <section class="featured-reviews">
+        <h2>Featured Reviews</h2>
+        <div class="review-card">
+          <p>"The best bakery in town! The pastries are to die for!"</p>
+          <p>- Jane Doe</p>
+        </div>
+        <div class="review-card">
+          <p>"I love the variety of products they offer. Always fresh!"</p>
+          <p>- John Smith</p>
+        </div>
+        <div class="review-card">
+          <p>"A hidden gem! The bread is amazing!"</p>
+          <p>- Sarah Johnson</p>
+        </div>
+      </section>
+      <!-- product link button -->
+      <section class="product-link">
+        <h2>Check out our products!</h2>
+        <a href="/product.html" class="button">Shop Now</a>
+      </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Poppy & Crumb. All rights reserved.</p>
+      <ul class="social-media">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </footer>
+</body>
+
 </html>
