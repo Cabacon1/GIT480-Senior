@@ -359,3 +359,110 @@ nav {
     outline: none;
     box-shadow: none;
 }
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: var(--light-brown);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+footer a {
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.3s ease;
+}  
+footer a:hover {
+    color: var(--dark-pink);
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+footer a:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px var(--dark-pink);
+}
+footer a:focus {
+    outline: none;
+    box-shadow: 0 0 10px var(--dark-pink);
+}
+footer a:disabled {
+    background-color: var(--dark-brown);
+    color: var(--white);
+    cursor: not-allowed;
+    box-shadow: none;
+}
+footer a:disabled:hover {
+    background-color: var(--dark-brown);
+    color: var(--white);
+    transform: none;
+    box-shadow: none;
+}
+footer a:disabled:active {
+    transform: none;
+    box-shadow: none;
+}
+footer a:disabled:focus {
+    outline: none;
+    box-shadow: none;
+}
+footer p {
+    margin: 1rem 0;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul li {
+    margin: 0 1rem;
+}
+footer ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+}
+footer ul li a:hover {
+    color: var(--dark-pink);
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+footer ul li a:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px var(--dark-pink);
+}
+footer ul li a:focus {
+    outline: none;
+    box-shadow: 0 0 10px var(--dark-pink);
+}
+footer ul li a:disabled {
+    background-color: var(--dark-brown);
+    color: var(--white);
+    cursor: not-allowed;
+    box-shadow: none;
+}
+footer ul li a:disabled:hover {
+    background-color: var(--dark-brown);
+    color: var(--white);
+    transform: none;
+    box-shadow: none;
+}
+footer ul li a:disabled:active {
+    transform: none;
+    box-shadow: none;
+}
+footer ul li a:disabled:focus {
+    outline: none;
+    box-shadow: none;
+}
