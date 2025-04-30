@@ -146,6 +146,45 @@ table {
 	padding: 0;
 }
 
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-brown);
+        color: var(--white);
+    }
+    .off-screen-menu {
+        background-color: var(--dark-brown);
+        color: var(--light-pink);
+    }
+    nav {
+        background-color: var(--dark-brown);
+        color: var(--light-pink);
+    }
+    footer {
+        background-color: var(--dark-brown);
+        color: var(--white);
+    }
+}
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--white);
+        color: var(--dark-pink);
+    }
+    .off-screen-menu {
+        background-color: var(--light-brown);
+        color: var(--light-pink);
+    }
+    nav {
+        background-color: var(--light-brown);
+        color: var(--light-pink);
+    }
+    footer {
+        background-color: var(--light-brown);
+        color: var(--white);
+    }
+}
+
 /* Main */
 body {
     font-family: "afacad", sans-serif;
