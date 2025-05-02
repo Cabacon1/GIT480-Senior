@@ -658,7 +658,8 @@ footer a:visited:focus {
     .product-list {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-    .featured-reviews h3{
+
+    .featured-reviews h3 {
         grid-row: 1;
         grid-column: 1 / -1;
     }
@@ -681,12 +682,14 @@ footer a:visited:focus {
         grid-auto-flow: dense;
         gap: 2rem;
     }
+
     #product-list li {
         display: grid;
         align-items: start;
         width: 100%;
         height: 100%;
     }
+
     #product-list li img {
         max-height: 400px;
         overflow-x: hidden;
@@ -699,7 +702,7 @@ footer a:visited:focus {
         align-self: end;
     }
 
-    footer{
+    footer {
         font-size: ;
     }
 
@@ -709,4 +712,42 @@ footer a:visited:focus {
         align-items: center;
     }
 
+}
+
+    
+@media screen and (min-width: 1280px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    /* .slider-wrapper {
+        width: 100%;
+    }
+
+    .slider {
+        height: 50vh;
+    }
+
+    .slider img {
+        height: 100%;
+    }
+
+    .slider-nav {
+        bottom: 1rem;
+    }
+
+    .featured-reviews,
+    .product-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .featured-reviews h3 {
+        grid-row: 1;
+        grid-column: 1 / -1;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+     */
 }
