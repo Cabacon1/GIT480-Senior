@@ -398,7 +398,8 @@ nav {
 }
 
 .featured-reviews .review-card {
-    background-color: var(--light-brown);
+    color: var(--dark-brown);
+    background-color: var(--tan);
     border-radius: 10px;
     padding: 1rem;
     text-align: center;
@@ -440,7 +441,7 @@ nav {
     background-color: var(--light-brown);
     border-radius: 10px;
     padding: 1rem;
-    margin-bottom:1rem; 
+    margin-bottom:2rem; 
     text-align: center;
     transition: 0.3s ease;
 }
