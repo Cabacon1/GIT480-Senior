@@ -49,7 +49,7 @@ const products = [
     name: "Deluxe",
     description: "A dozen 3-4 cookies designed and decorated based on the theme of your choosing. Standard designs may include piping, simpler florals, hand drawn elements, simple painting, and larger lettering.",
     price: 72,
-    image: "images/Deluxe.jpg"
+    image: "images/Basketball.jpg"
   },
   {
     id: 3,
