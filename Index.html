@@ -3,13 +3,18 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Poppy & Crumb Bakery - Freshly baked goods and custom cookies." />
+  <meta name="keywords" content="bakery, cookies, pastries, desserts" />
   <title>Poppy & Crumb Home</title>
   <meta name="robots" content="index,follow" />
+
   <!-- style -->
   <link rel="stylesheet" href="/styles.css" />
   <!-- Javascript -->
   <script src="/app.js" async></script>
+
 </head>
 
 <body>
@@ -31,49 +36,43 @@
     </nav>
   </header>
   <main>
-    <section>
-      <!-- Image Carousel -->
-      <div class="carousel-container">
-        <div class="carousel-slide">
-          <img src="/images/slide1.jpg" alt="Slide 1" />
+    <!-- Image slider -->
+    <section class="container-slider">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img id="slider-1" src="/images/946009026603619868.JPG" alt="">
+          <img id="slider-2" src="/images/896400281161390931.JPG" alt="">
+          <img id="slider-3" src="/images/6989436663748022450.JPG" alt="">
         </div>
-        <div class="carousel-slide">
-          <img src="/images/slide2.jpg" alt="Slide 2" />
-        </div>
-        <div class="carousel-slide">
-          <img src="/images/slide3.jpg" alt="Slide 3" />
+        <div class="slider-nav">
+          <a href="#slider-1"></a>
+          <a href="#slider-2"></a>
+          <a href="#slider-3"></a>
         </div>
       </div>
-      <div class="carousel-controls">
-        <button class="prev" onclick="prevSlide()">&#10094;</button>
-        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </section>
+    <h2>Decorative Cookies</h2>
+    <!-- Featured Reviews Section -->
+    <section class="featured-reviews">
+      <h2>Featured Reviews</h2>
+      <div class="review-card">
+        <p>"The best bakery in town! The pastries are to die for!"</p>
+        <p>- Jane Doe</p>
       </div>
-      <div class="carousel-indicators">
-        <span class="indicator" onclick="currentSlide(1)"></span>
-        <span class="indicator" onclick="currentSlide(2)"></span>
-        <span class="indicator" onclick="currentSlide(3)"></span>
+      <div class="review-card">
+        <p>"I love the variety of products they offer. Always fresh!"</p>
+        <p>- John Smith</p>
       </div>
-      <!-- Featured Reviews Section -->
-      <section class="featured-reviews">
-        <h2>Featured Reviews</h2>
-        <div class="review-card">
-          <p>"The best bakery in town! The pastries are to die for!"</p>
-          <p>- Jane Doe</p>
-        </div>
-        <div class="review-card">
-          <p>"I love the variety of products they offer. Always fresh!"</p>
-          <p>- John Smith</p>
-        </div>
-        <div class="review-card">
-          <p>"A hidden gem! The bread is amazing!"</p>
-          <p>- Sarah Johnson</p>
-        </div>
-      </section>
-      <!-- product link button -->
-      <section class="product-link">
-        <h2>Check out our products!</h2>
-        <a href="/product.html" class="button">Shop Now</a>
-      </section>
+      <div class="review-card">
+        <p>"A hidden gem! The bread is amazing!"</p>
+        <p>- Sarah Johnson</p>
+      </div>
+    </section>
+    <!-- product link button -->
+    <section class="product-link">
+      <h2>Check out our products!</h2>
+      <a href="/product.html" class="button">Shop Now</a>
+    </section>
   </main>
   <footer>
     <div class="footer-content">

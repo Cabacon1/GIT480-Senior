@@ -94,6 +94,7 @@ video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -108,17 +109,21 @@ nav,
 section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol,
 ul {
     list-style: none;
 }
+
 blockquote,
 q {
     quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -126,10 +131,12 @@ q:after {
     content: "";
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 :root {
     --dark-pink: #d991a4;
     --light-pink: #f2bdcb;
@@ -139,11 +146,12 @@ table {
     --white: #ffffff;
     --black: #000000;
 }
-/* Custome CSS */
+
+/* Custom CSS */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* Dark Mode */
@@ -152,33 +160,40 @@ table {
         background-color: var(--dark-brown);
         color: var(--white);
     }
+
     .off-screen-menu {
         background-color: var(--dark-brown);
         color: var(--light-pink);
     }
+
     nav {
         background-color: var(--dark-brown);
         color: var(--light-pink);
     }
+
     footer {
         background-color: var(--dark-brown);
         color: var(--white);
     }
 }
+
 /* Light Mode */
 @media (prefers-color-scheme: light) {
     body {
         background-color: var(--white);
         color: var(--dark-pink);
     }
+
     .off-screen-menu {
         background-color: var(--light-brown);
         color: var(--light-pink);
     }
+
     nav {
         background-color: var(--light-brown);
         color: var(--light-pink);
     }
+
     footer {
         background-color: var(--light-brown);
         color: var(--white);
@@ -187,7 +202,7 @@ table {
 
 /* Main */
 body {
-    font-family: "afacad", sans-serif;
+    font-family: "Afacad", sans-serif;
     background-color: var(--white);
     color: var(--dark-pink);
     font-size: 1.5rem;
@@ -196,10 +211,11 @@ body {
     max-width: 1200px;
 }
 
-main{
+main {
     padding: 1rem 2rem;
 }
-.title{
+
+.title {
     position: relative;
     width: 50%;
 }
@@ -226,12 +242,15 @@ h1 {
 h2 {
     font-size: 2.5rem;
 }
+
 h3 {
     font-size: 2rem;
 }
+
 h4 {
     font-size: 1.5rem;
 }
+
 h5 {
     font-size: 1.2rem;
 }
@@ -256,11 +275,12 @@ h5 {
 
 .off-screen-menu.active {
     right: 0;
+    z-index: 1000;
 }
 
 nav {
     color: var(--light-pink);
-    padding: 1rem;
+    padding: .5rem;
     display: flex;
     align-items: center;
     background-color: var(--light-brown);
@@ -270,6 +290,7 @@ nav {
     color: var(--light-pink);
     text-decoration: none;
 }
+
 .off-screen-menu li:hover {
     /* padding: .5rem; */
     color: var(--dark-pink);
@@ -296,6 +317,7 @@ nav {
     transform: translate(-50%, -50%);
     transition: 0.3s ease;
 }
+
 .ham-menu span:nth-child(1) {
     top: 25%;
 }
@@ -312,12 +334,60 @@ nav {
 .ham-menu.ham-menu.active span:nth-child(2) {
     opacity: 0;
 }
+
 .ham-menu.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-/* main content */
+/* Image Slider */
+
+.slider-wrapper {
+    position: relative;
+    max-width: 100vw;
+    margin: 0 auto;
+
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    object-fit: fill;
+    height: 80vh;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 0 10px var(--dark-pink);
+}
+
+.slider img {
+    flex:1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: .05rem;
+    height: .05rem;
+    border-radius: 50%;
+    background-color: var(--dark-pink);
+    opacity: 0.75;   
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
 
 /*Product List  */
 .product-list {
@@ -326,6 +396,7 @@ nav {
     gap: 2rem;
     margin: 2rem 0;
 }
+
 .product-list .product-card {
     background-color: var(--light-brown);
     border-radius: 10px;
@@ -333,11 +404,12 @@ nav {
     text-align: center;
     transition: 0.3s ease;
 }
- 
+
 .product-list .product-card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px var(--dark-pink);
 }
+
 .product-list .product-card img {
     width: 100%;
     height: auto;
@@ -349,6 +421,7 @@ nav {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
+
 .product-list .product-card p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
@@ -364,36 +437,43 @@ nav {
     cursor: pointer;
     transition: 0.3s ease;
 }
+
 .product-list .product-card button:hover {
     background-color: var(--light-pink);
     color: var(--dark-brown);
     transform: scale(1.05);
     box-shadow: 0 0 10px var(--dark-pink);
 }
+
 .product-list .product-card button:active {
     transform: scale(0.95);
     box-shadow: 0 0 5px var(--dark-pink);
 }
+
 .product-list .product-card button:focus {
     outline: none;
     box-shadow: 0 0 10px var(--dark-pink);
 }
+
 .product-list .product-card button:disabled {
     background-color: var(--dark-brown);
     color: var(--white);
     cursor: not-allowed;
     box-shadow: none;
 }
+
 .product-list .product-card button:disabled:hover {
     background-color: var(--dark-brown);
     color: var(--white);
     transform: none;
     box-shadow: none;
 }
+
 .product-list .product-card button:disabled:active {
     transform: none;
     box-shadow: none;
 }
+
 .product-list .product-card button:disabled:focus {
     outline: none;
     box-shadow: none;
@@ -412,48 +492,58 @@ footer {
     margin-top: 2rem;
     font-size: 1.2rem;
 }
+
 footer a {
     color: var(--white);
     text-decoration: none;
     transition: 0.3s ease;
-}  
+}
+
 footer a:hover {
     color: var(--dark-pink);
     text-decoration: underline;
     transform: scale(1.1);
     transition: 0.3s ease;
 }
+
 footer a:active {
     transform: scale(0.95);
     box-shadow: 0 0 5px var(--dark-pink);
 }
+
 footer a:focus {
     outline: none;
     box-shadow: 0 0 10px var(--dark-pink);
 }
+
 footer a:disabled {
     background-color: var(--dark-brown);
     color: var(--white);
     cursor: not-allowed;
     box-shadow: none;
 }
+
 footer a:disabled:hover {
     background-color: var(--dark-brown);
     color: var(--white);
     transform: none;
     box-shadow: none;
 }
+
 footer a:disabled:active {
     transform: none;
     box-shadow: none;
 }
+
 footer a:disabled:focus {
     outline: none;
     box-shadow: none;
 }
+
 footer p {
     margin: 1rem 0;
 }
+
 footer ul {
     list-style: none;
     padding: 0;
@@ -462,45 +552,54 @@ footer ul {
     justify-content: center;
     align-items: center;
 }
+
 footer ul li {
     margin: 0 1rem;
 }
+
 footer ul li a {
     color: var(--white);
     text-decoration: none;
     font-size: 1.5rem;
     transition: 0.3s ease;
 }
+
 footer ul li a:hover {
     color: var(--dark-pink);
     text-decoration: underline;
     transform: scale(1.1);
     transition: 0.3s ease;
 }
+
 footer ul li a:active {
     transform: scale(0.95);
     box-shadow: 0 0 5px var(--dark-pink);
 }
+
 footer ul li a:focus {
     outline: none;
     box-shadow: 0 0 10px var(--dark-pink);
 }
+
 footer ul li a:disabled {
     background-color: var(--dark-brown);
     color: var(--white);
     cursor: not-allowed;
     box-shadow: none;
 }
+
 footer ul li a:disabled:hover {
     background-color: var(--dark-brown);
     color: var(--white);
     transform: none;
     box-shadow: none;
 }
+
 footer ul li a:disabled:active {
     transform: none;
     box-shadow: none;
 }
+
 footer ul li a:disabled:focus {
     outline: none;
     box-shadow: none;
