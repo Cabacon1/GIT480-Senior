@@ -208,7 +208,7 @@ body {
     font-size: 1.5rem;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 100vw;
 }
 
 main {
@@ -702,10 +702,6 @@ footer a:visited:focus {
         align-self: end;
     }
 
-    footer {
-        font-size: ;
-    }
-
     .footer-content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -720,34 +716,60 @@ footer a:visited:focus {
         font-size: 1.5rem;
     }
 
-    /* .slider-wrapper {
-        width: 100%;
+    h1{
+        font-size: 3rem;
     }
-
-    .slider {
-        height: 50vh;
-    }
-
-    .slider img {
-        height: 100%;
-    }
-
-    .slider-nav {
-        bottom: 1rem;
-    }
-
-    .featured-reviews,
-    .product-list {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .featured-reviews h3 {
-        grid-row: 1;
-        grid-column: 1 / -1;
-    }
-
-    h1 {
+    h2{
         font-size: 2.5rem;
     }
-     */
+    h3{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    h5{
+        font-size: 1.2rem;
+    }
+    header {
+        background-color: var(--light-brown);
+        display: grid;
+        grid-template-columns: auto 60vw;
+        width: 100vw;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+    header ul{
+        font-size: 2rem;
+        display: flex;
+        width: 100%;   
+        margin: auto;
+        padding: 1rem 0;
+    }
+
+    header li {
+        display: inline-block;
+        list-style-type: none;
+        flex-wrap: nowrap;
+        margin: 0 1rem;
+        list-style: none;
+    }
+    .ham-menu {
+        display: none;
+    }
+    .off-screen-menu {
+        display: flex;
+        position: relative;
+        height: auto;
+        width: auto;
+        left: 0;   
+    }
+
+    /* Product Link resize */
+
+    .product-link a {
+        width: 75vw;
+    }
+    
 }
