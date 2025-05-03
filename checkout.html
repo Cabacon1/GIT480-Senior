@@ -36,11 +36,52 @@
     </header>
     <main>
         <section class="product-summary">
-
+            <h2>Product Summary</h2>
+            <div id="product-summary">
+                <div class="product-image">
+                    <img src="images/StandardCookie.jpg" alt="Cookie" />
+                </div>
+                <div class="product-info">
+                    <h3>Standard</h3>
+                    <p>A dozen 3-4in cookies of one simple design with limited colors. This option is perfect for place
+                        cards or party favors.</p>
+                    <p id="product-price">Price: $60</p>
+                </div>
+            </div>
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <p>Subtotal: $60</p>
+                <p>Shipping: $12</p>
+                <p>Total: $72</p>
+            </div>
         </section>
-        <section class="cart">
-            <h2>cart</h2>
+        <section class="request-form-container">
+            <div class="form-header">
+                <h2>Request Form</h2>
+                <p>Please fill out the form below to complete your order.</p>
+            </div>
+            <div class="request-form">
+                <form id="checkout-form" action="thankyou.html" method="POST">
 
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                   
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required />
+                   
+                        <label for="textarea">Message:</label>
+                        <textarea id="textarea" name="textarea" rows="4" required></textarea>
+                    
+                        <!-- form submit button -->
+                        <button type="submit" id="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer-content">
@@ -121,7 +162,7 @@
             </section>
             <div class="footer-links">
                 <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>  
+                <a href="#">Terms of Service</a>
                 <p>&copy; 2023 Poppy & Crumb. All rights reserved.</p>
             </div>
         </div>

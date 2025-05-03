@@ -1,4 +1,5 @@
 // strict mode
+
 "use strict";
 
 // Hamburger menu
@@ -78,10 +79,12 @@ const products = [
 // This code dynamically creates a list of products and appends them to the product list container in the HTML.
 // It uses the product data to create list items with images, names, descriptions, prices, and "Add to Cart" buttons.   
 
-let productListContainer = document.getElementById("product-list");
+
 
 products.forEach((product) => {
+  let productListContainer = document.getElementById("product-list");
   let listItem = document.createElement("li");
+  
   listItem.classList.add("product-card");
   listItem.innerHTML = `
     <img class="product-card-image" src="${product.image}" alt="${product.name}">
@@ -96,4 +99,20 @@ products.forEach((product) => {
     `;
   productListContainer.appendChild(listItem);
 });
+
+// Save products that are added to the cart in local storage
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let addToCartButtons = document.querySelectorAll(".add-to-cart");
+addToCartButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    let productId = parseInt(button.getAttribute("data-id"));
+    let product = products.find((p) => p.id === productId);
+    if (product) {
+      cart.push(product);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert(`${product.name} has been added to your cart!`);
+    }
+  });
+});
+
 
