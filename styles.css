@@ -452,7 +452,7 @@ nav {
 
 .product-list .product-card {
     background-color: var(--white);
-    border:solid .5rem var(--light-brown);
+    border: solid .5rem var(--light-brown);
     border-style: solid;
     border-radius: 10px;
     padding: 1rem;
@@ -574,12 +574,16 @@ nav {
     border-radius: 10px;
     box-shadow: 0 0 10px var(--dark-pink);
 }
-.product-summary h2,h3,h4{
+
+.product-summary h2,
+h3,
+h4 {
     color: var(--light-pink);
     margin: 1rem 0;
     font-size: 2rem;
     text-align: center;
 }
+
 .product-summary img {
     width: 100%;
     height: 20vh;
@@ -587,9 +591,9 @@ nav {
     border-radius: 10px;
     margin-bottom: 1rem;
     box-shadow: 0 0 10px var(--dark-pink);
-} 
+}
 
-#product-price{
+#product-price {
     text-align: center;
     font-weight: bold;
 }
@@ -607,12 +611,14 @@ nav {
     border-radius: 10px;
     box-shadow: 0 0 10px var(--dark-pink);
 }
+
 .request-form h2 {
     color: var(--light-pink);
     margin: 1rem 0;
     font-size: 2rem;
     text-align: center;
 }
+
 .request-form form {
     display: grid;
     width: 80vw;
@@ -620,7 +626,8 @@ nav {
     grid-gap: 1rem;
     margin: 2rem 0;
 }
-.request-form form input, 
+
+.request-form form input,
 .request-form form textarea {
     background-color: var(--white);
     color: var(--dark-brown);
@@ -630,6 +637,7 @@ nav {
     font-size: 1.2rem;
     transition: 0.3s ease;
 }
+
 .request-form form input:focus,
 .request-form form textarea:focus {
     outline: none;
@@ -645,7 +653,7 @@ nav {
     margin-bottom: 1rem;
 }
 
-.request-form button{
+.request-form button {
     background-color: var(--dark-pink);
     color: var(--white);
     border: none;
@@ -655,36 +663,43 @@ nav {
     cursor: pointer;
     transition: 0.3s ease;
 }
+
 .request-form button:hover {
     background-color: var(--light-pink);
     color: var(--dark-brown);
     transform: scale(1.05);
     box-shadow: 0 0 10px var(--dark-pink);
 }
+
 .request-form button:active {
     transform: scale(0.95);
     box-shadow: 0 0 5px var(--dark-pink);
 }
+
 .request-form button:focus {
     outline: none;
     box-shadow: 0 0 10px var(--dark-pink);
 }
+
 .request-form button:disabled {
     background-color: var(--dark-brown);
     color: var(--white);
     cursor: not-allowed;
     box-shadow: none;
 }
+
 .request-form button:disabled:hover {
     background-color: var(--dark-brown);
     color: var(--white);
     transform: none;
     box-shadow: none;
 }
+
 .request-form button:disabled:active {
     transform: none;
     box-shadow: none;
 }
+
 .request-form button:disabled:focus {
     outline: none;
     box-shadow: none;
@@ -842,6 +857,7 @@ footer a:visited:focus {
         align-items: center;
         justify-content: center;
     }
+
     #product-summary img {
         width: 100%;
         height: 40vh;
@@ -849,10 +865,11 @@ footer a:visited:focus {
         border-radius: 10px;
         margin-bottom: 1rem;
     }
+
     .order-summary {
         text-align: center;
     }
-    
+
     /* Form */
 
 
@@ -865,27 +882,32 @@ footer a:visited:focus {
 
 }
 
-    
+
 @media screen and (min-width: 1280px) {
     body {
         font-size: 1.5rem;
     }
 
-    h1{
+    h1 {
         font-size: 3rem;
     }
-    h2{
+
+    h2 {
         font-size: 2.5rem;
     }
-    h3{
+
+    h3 {
         font-size: 2rem;
     }
-    h4{
+
+    h4 {
         font-size: 1.5rem;
     }
-    h5{
+
+    h5 {
         font-size: 1.2rem;
     }
+
     header {
         background-color: var(--light-brown);
         display: grid;
@@ -895,10 +917,11 @@ footer a:visited:focus {
         align-items: center;
         padding: 0 2rem;
     }
-    header ul{
+
+    header ul {
         font-size: 2rem;
         display: flex;
-        width: 100%;   
+        width: 100%;
         margin: auto;
         padding: 1rem 0;
     }
@@ -910,15 +933,17 @@ footer a:visited:focus {
         margin: 0 1rem;
         list-style: none;
     }
+
     .ham-menu {
         display: none;
     }
+
     .off-screen-menu {
         display: flex;
         position: relative;
         height: auto;
         width: auto;
-        left: 0;   
+        left: 0;
     }
 
     /* Product Link resize */
@@ -935,22 +960,23 @@ footer a:visited:focus {
         align-items: center;
         justify-content: center;
     }
-    
+
     .order-summary {
         text-align: center;
     }
 
     /* form */
-    .request-form-container{
+    .request-form-container {
         display: grid;
         margin: auto;
-        align-items: center ;
+        align-items: center;
         width: 60vw;
     }
+
     .request-form form {
         display: grid;
         width: 50vw;
         grid-gap: 1rem;
         margin: 2rem 0;
-    }   
+    }
 }
