@@ -79,8 +79,6 @@ const products = [
 // This code dynamically creates a list of products and appends them to the product list container in the HTML.
 // It uses the product data to create list items with images, names, descriptions, prices, and "Add to Cart" buttons.   
 
-
-
 products.forEach((product) => {
   let productListContainer = document.getElementById("product-list");
   let listItem = document.createElement("li");
@@ -94,7 +92,7 @@ products.forEach((product) => {
       <p>Price: $${product.price}</p>
     </div>
     <div class="product-card-actions">
-      <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
+      <button class="add-to-cart " data-id="${product.id}">Add to Cart</button>
     </div>
     `;
   productListContainer.appendChild(listItem);
@@ -116,3 +114,7 @@ addToCartButtons.forEach((button) => {
 });
 
 
+// unable to add to cart
+// I have tried to add a function that would take the products added from the Product.html and display it in the checkout.html page.
+// My attempts have failed each time.  
+// I am able to save the products to local storage.  But I unsuccessfully tried to display the products in the checkout.html page.

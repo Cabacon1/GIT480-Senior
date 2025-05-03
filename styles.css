@@ -586,6 +586,7 @@ nav {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1rem;
+    box-shadow: 0 0 10px var(--dark-pink);
 } 
 
 #product-price{
@@ -623,7 +624,7 @@ nav {
 .request-form form textarea {
     background-color: var(--white);
     color: var(--dark-brown);
-    border: solid 0.5rem var(--dark-pink);
+    border: solid 0.3rem var(--dark-pink);
     border-radius: 10px;
     padding: 1rem;
     font-size: 1.2rem;
@@ -643,6 +644,53 @@ nav {
     padding: 1rem;
     margin-bottom: 1rem;
 }
+
+.request-form button{
+    background-color: var(--dark-pink);
+    color: var(--white);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.request-form button:hover {
+    background-color: var(--light-pink);
+    color: var(--dark-brown);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--dark-pink);
+}
+.request-form button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px var(--dark-pink);
+}
+.request-form button:focus {
+    outline: none;
+    box-shadow: 0 0 10px var(--dark-pink);
+}
+.request-form button:disabled {
+    background-color: var(--dark-brown);
+    color: var(--white);
+    cursor: not-allowed;
+    box-shadow: none;
+}
+.request-form button:disabled:hover {
+    background-color: var(--dark-brown);
+    color: var(--white);
+    transform: none;
+    box-shadow: none;
+}
+.request-form button:disabled:active {
+    transform: none;
+    box-shadow: none;
+}
+.request-form button:disabled:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
 
 /* Footer */
 footer {
@@ -786,6 +834,29 @@ footer a:visited:focus {
         align-self: end;
     }
 
+    /* Product Summary */
+    #product-summary {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    #product-summary img {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+    .order-summary {
+        text-align: center;
+    }
+    
+    /* Form */
+
+
+    /* Footer */
     .footer-content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -855,5 +926,31 @@ footer a:visited:focus {
     .product-link a {
         width: 75vw;
     }
+
+    /* Product Summary */
+    #product-summary {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
     
+    .order-summary {
+        text-align: center;
+    }
+
+    /* form */
+    .request-form-container{
+        display: grid;
+        margin: auto;
+        align-items: center ;
+        width: 60vw;
+    }
+    .request-form form {
+        display: grid;
+        width: 50vw;
+        grid-gap: 1rem;
+        margin: 2rem 0;
+    }   
 }
